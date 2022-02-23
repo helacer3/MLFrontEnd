@@ -1,0 +1,51 @@
+@import "../../utils/variables";
+
+/* result Detail Container */
+.ml-content .ml-product {
+	background-color: $color-default;
+	padding: 32px 28px;
+	border-radius: $border-radius;
+
+	.ml-product-data {
+		display: flex;
+		flex-direction: row;
+
+		.ml-product-data-image {
+			text-align: center;
+			width: 680px;
+		}
+
+		.ml-product-data-info {
+			width: 25%;
+			.ml-product-count {
+				font-size: 14px;
+			}
+			.ml-product-title {
+				padding-top: 16px;
+				font-weight: bold;
+				font-size: 24px;
+			}
+			.ml-product-price {
+				padding: 32px 0 32px 0;
+				font-size: 46px;
+			}
+		}
+
+		.ml-product-data-image img {
+			max-width: 90%;
+			height: auto;
+		}
+	}
+
+	.ml-product-description {
+		width: 100%;
+
+		p {
+			padding: 15px 30% 0 0;
+			font-size: 16px;
+		}
+		.ml-product-description-title {
+			font-size: 28px;
+		}
+	}
+}

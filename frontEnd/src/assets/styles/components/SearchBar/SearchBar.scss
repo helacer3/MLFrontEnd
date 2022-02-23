@@ -1,0 +1,59 @@
+@import "../../utils/variables";
+
+.ml-header {
+	width: 100%;
+	max-width: 100%;
+	background-color: $color-principal;
+	padding: 9px 10%;
+	display: flex;
+	flex-direction: row;
+
+	.ml-logo a {
+		background-color: transparent;
+		padding: 4px 0 0 0;
+		margin: 0;
+	}
+
+	.ml-input {
+		width: 100%;
+		padding-left: 28px;
+
+		::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		input {
+			padding-left: 11px;
+			border: none;
+			border-radius: $border-radius 0 0 $border-radius;
+			width: 96%;
+			height: 100%;
+			font-size: 18px;
+			outline: none;
+		}
+
+		input::-moz-focus-inner {
+			border: 0; 
+		}
+	}
+}
+
+
+.ml-input button {
+	float: right;
+	width: 4%;
+	padding: 10px;
+	background: $color-icon;
+	color: white;
+	font-size: 17px;
+	border: 1px solid #ebebeb;
+	border-left: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	
+	:hover {
+		background: #0b7dda;
+  	}
+}

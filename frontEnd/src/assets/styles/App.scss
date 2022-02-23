@@ -1,0 +1,92 @@
+@import "./utils/variables";
+
+/* global styles */
+* {
+  box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: $font-family;
+}
+h2 {
+	font-size: 1em;
+}
+a {
+    width: 100%;
+    display: inline-block;
+	background-color: $color-links;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	padding: 7px 0;
+	border-radius: $border-radius;
+}
+hr {
+	height: 1px;
+    background-color: $color-hr;
+    border: none;
+}
+
+/* container */
+.ml-container {
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+	padding-bottom: 80px;
+	flex-direction: column;
+	background-color: $color-container;
+	min-height: 100vh;
+}
+
+/* principal Container */
+.ml-content {
+	width: 80%;
+	margin: 0 auto;
+
+	.ml-breadcrumb {
+		padding: 4px 0;
+		background-color: $color-container;
+		font-size: 0.8em;
+
+		ul.breadcrumb {
+			padding: 0;
+			list-style: none;
+
+			li {
+				display: inline;
+				font-size: 18px;
+				:last-child {
+					font-weight: bold;
+				}
+				+li:before {
+					padding: 8px;
+					color: black;
+					content: "›";
+				}
+			}
+
+		}
+	}
+}
+
+.separator {
+	padding: 0 11px;
+}
+
+.errorMessage,
+.loadingMessage {
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 40px;	
+}
+.errorMessage {
+	color: $color-error;
+}
+.loadingMessage {
+	color: $color-loading;
+}
+

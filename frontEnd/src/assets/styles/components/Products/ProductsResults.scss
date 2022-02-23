@@ -1,0 +1,65 @@
+@import "../../utils/variables";
+
+/* result Search Container */
+.ml-content .ml-results {
+	background-color: #FFF;
+	border-radius: $border-radius;
+
+	.ml-result .ml-results-section {
+		cursor: pointer;
+
+		ul.ml-list-products {
+			list-style: none;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			
+			li.ml-list-products-item {
+				display: flex;
+				flex-direction: row;
+				padding: 16px;
+				
+				.ml-product-image {
+					border-radius: $border-radius;
+					text-align: center;
+					min-width: 212px;
+
+					img {
+						width: 100%;
+						width: 180px;
+						height: 180px;
+						border-radius: $border-radius;
+					}
+				}
+
+				.ml-product-data {
+					padding: 5px 10px;
+					width: 70%;
+
+					.ml-dataprice {
+						font-weight: bold;
+						font-size: 24px; 
+						margin-bottom: 32px;
+
+						img {
+							display: inline-block;
+							width: 13px;
+							height: auto;
+							margin-left: 7px;
+						}
+					}
+
+					.ml-dataname {
+						padding-top: 8px;
+						font-size: 18px; 
+					}
+				}
+
+				.ml-product-location {
+					padding-top: 10px;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
